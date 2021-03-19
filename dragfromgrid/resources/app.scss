@@ -1,0 +1,59 @@
+.b-sch-event {
+    border-radius : 3px;
+    box-shadow    : 0 1px 1px 0 rgba(0, 0, 0, .25);
+}
+
+#main {
+    display        : flex;
+    flex-direction : row;
+    flex           : 1 1 100%;
+
+    .b-resourceheader {
+        height : 100%;
+    }
+}
+
+.b-grid-header {
+    height : 57px;
+}
+
+.b-unassigned-class.b-drag-proxy {
+    background    : green;
+    color         : #fff;
+    border-radius : 3px;
+    box-shadow    : 0 1px 1px 0 rgba(0, 0, 0, .25);
+    // Need to override height set in style on row when dragging, to match event height
+    height        : 42px !important;
+
+    &.b-drag-invalid {
+        background : red;
+    }
+
+    &.b-horizontal {
+        align-items     : center;
+        padding-left    : .5em;
+        flex-flow       : row nowrap;
+        justify-content : flex-start;
+
+        i {
+            margin-right : .5em;
+        }
+    }
+
+    &.b-vertical {
+        justify-content : flex-start;
+        padding-top     : .5em;
+    }
+}
+
+.b-aborting.b-unassigned-class {
+    transition     : transform 0.3s !important;
+
+    // https://app.assembla.com/spaces/bryntum/tickets/7168-drag-drop-cleanup-code-on-abort-is-interfering-with-animation/details#
+    background     : red;
+    position       : absolute !important;
+    z-index        : 10000;
+    pointer-events : none;
+    opacity        : 0.8;
+    box-sizing     : border-box;
+}

@@ -1,0 +1,72 @@
+body {
+	font-family: Arial, sans-serif;
+	color: #000;
+	background-color: #f3f4f5;
+	margin: 0;
+	padding: 0;
+}
+/****** scroll bar css *****************/
+
+*::-webkit-scrollbar {
+	width: 5px;
+	height: 3px;
+	background: #fff;
+}
+
+*::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #808080;
+	border-radius: 0;
+	outline: 2px solid #d9d9d9;
+}
+/* common css */
+.float-right {
+	float: right;
+}
+/* common css */
+
+/****** scroll bar css *****************/
+.side-header {
+	background-color: #3a7bdb;
+	padding: 24px;
+	width: 100%;
+}
+
+.side-header .heading {
+	color: #fff;
+	font-size: 16px;
+	margin: 0;
+	font-weight: normal;
+}
+
+/*=== Side Panel List === */
+.right-side-panel {
+	margin: 7px;
+}
+.right-side-panel .task-list {
+	list-style: none;
+	padding: 7px;
+	margin: 0;
+}
+
+.right-side-panel .task-list li {
+	background-color: #fff;
+	padding: 12px 10px;
+	box-shadow: 0 3px 6px rgb(0 0 0 / 12%), 0 3px 6px rgb(0 0 0 / 7%);
+	position: relative;
+	border-left: 4px solid #2667c8;
+	margin-bottom: 10px;
+	border-radius: 0;
+	font-size: 14px;
+	color: #000;
+	cursor: pointer;
+}
+.right-side-panel .task-list li:hover {
+	background-color: #fff1de;
+}
+
+/*=== Side Panel List === */

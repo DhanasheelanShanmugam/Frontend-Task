@@ -1,0 +1,56 @@
+.b-sch-event {
+  border-radius: 3px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 100%;
+}
+
+#main .b-resourceheader {
+  height: 100%;
+}
+
+.b-grid-header {
+  height: 57px;
+}
+
+.b-unassigned-class.b-drag-proxy {
+  background: green;
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  height: 42px !important;
+}
+
+.b-unassigned-class.b-drag-proxy.b-drag-invalid {
+  background: red;
+}
+
+.b-unassigned-class.b-drag-proxy.b-horizontal {
+  align-items: center;
+  padding-left: .5em;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.b-unassigned-class.b-drag-proxy.b-horizontal i {
+  margin-right: .5em;
+}
+
+.b-unassigned-class.b-drag-proxy.b-vertical {
+  justify-content: flex-start;
+  padding-top: .5em;
+}
+
+.b-aborting.b-unassigned-class {
+  transition: transform 0.3s !important;
+  background: red;
+  position: absolute !important;
+  z-index: 10000;
+  pointer-events: none;
+  opacity: 0.8;
+  box-sizing: border-box;
+}
